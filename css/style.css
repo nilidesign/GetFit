@@ -235,6 +235,40 @@ footer {
         color: #F7F7F7;
         text-align: center;
     }
+    nav {
+        padding: 10px 10px;
+    }
+    .button {
+        padding: 5px 8px;
+        font-size: 10px;
+        font-weight: 300;
+        color: #F7F7F7;
+        border-radius: 5px;
+        border: 1px solid #acacac;
+        box-shadow: -2px 3px 30px #888888;
+    }
+    .button:hover {
+        color: #3C3C3C;
+        border: 1px solid rgba(92, 123, 188, 0.8);
+        box-shadow: -2px 4px 45px #888888;
+        opacity: 1;
+    }
+    .apple {
+        height: 8px;
+        width: 7px;
+        margin-right: 2px;
+    }
+    .down {
+        padding: 0 auto;
+        font-size: 24px;
+        font-weight: 300;
+        padding: 15px 30px;
+    }
+    .apple2 {
+        height: 21px;
+        width: 18px;
+        margin-right: 5px;
+    }
 }
 
 
