@@ -168,6 +168,10 @@ a {
     margin: 0 auto;
 }
 
+#space {
+    padding-top: 50px;
+}
+
 .down {
     padding: 0 auto;
     font-size: 24px;
