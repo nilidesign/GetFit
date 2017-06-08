@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    background-color: #F7F7F7;
+}
+
+
+
+/*            MENU            */
+
+nav {
+    width: 100%;
+    top: 0;
+    padding: 35px 25px;
+    position: fixed;
+    text-align: right;
+    z-index: 100;
+}
+
+.button {
+    padding: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #F7F7F7;
+    border-radius: 5px;
+    border: 2px solid #acacac;
+    box-shadow: -2px 3px 30px #888888;
+    background: #7787FF; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#7787FF, rgba(63, 86, 134, 0.8)); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#7787FF, rgba(63, 86, 134, 0.8)); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#7787FF, rgba(63, 86, 134, 0.8)); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#7787FF, rgba(63, 86, 134, 0.8)); /* Standard syntax */
+    opacity: 0.9;
+    animation: fade-in 2s ease;
+}
+
+.button:hover {
+    color: #3C3C3C;
+    border: 2px solid rgba(92, 123, 188, 0.8);
+    box-shadow: -2px 4px 45px #888888;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    opacity: 1;
+}
+
+.apple {
+    margin-right: 5px;
+}
+
+
+
+/*            SECTION 1            */
+
+.header {
+    position: relative;
+    top: 0; 
+    left: 0;
+    width: 100%;
+}
+
+.mac, .headerlogo{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+/*            SECTION 2            */
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+h1,
+h2 {
+    font-size: 70px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    color: #1f1f1f;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #1b8686;
+}
+
+
+#section2 {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 70px;
+}
+
+
+
+/*            SECTION 3            */
+
+#section3 {
+    background-image: url(../img/appphones2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+/*            SECTION 4            */
+
+#section4 {
+    text-align: center;
+    padding: 0 auto;
+    padding-bottom: 150px;
+}
+
+
+
+/*            SECTION 5            */
+
+#section5 {
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.box {
+    width: 100%;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 200;
+    color: #404040;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+
+.text p {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#space {
+    padding: 100px;
+}
+
+.down {
+    padding: 0 auto;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 15px 30px;
+}
+
+.down:hover {
+    padding: 18px 33px;
+}
+
+.download {
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+h6 {
+    font-weight: 300;    
+}
+
+
+
+/*            FOOTER            */
+
+footer {
+    padding: 15px;
+    background-color: #3C3C3C;
+    color: #F7F7F7;
+    text-align: center;
+}
+
+
+
+/*            ANIMATION            */
+
+.fade-in-left{
+    animation: fade-in-left 1.5s cubic-bezier(.36, .23, .36, 1);
+}
+
+.fade-in-bottom {
+    animation: fade-in-bottom 1s ease;
+}
+
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(-500px); 
+        opacity: 0;
+    }
+    90% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
